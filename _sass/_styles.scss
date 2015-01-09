@@ -163,9 +163,13 @@ footer {
     font-size: 16pt;
   }
 
-  div.copyright {
+  .copyright {
     margin-top: 5px;
     border-top: solid 1px $footer-text-color;
+
+    .license {
+      text-align: left;
+    }
   }
 }
 
@@ -227,12 +231,12 @@ hr {
 // #diagnostic is used to show the bootstrap size currently being used. This
 // is helpful for diagnosing layout issues.
 #diagnostic {
-  display: none; // To hide or show diagnostic panel
+  //display: none; // To hide or show diagnostic panel
   z-index: 2000;
   position: fixed;
   top: 0;
   left: 4px;
-  color: #dddddd;
+  color: darken(#eef2e9, 5%);
 
   &:after {
     content: "xs";
@@ -240,21 +244,31 @@ hr {
 }
 
 @media (min-width: 768px) {
+
   #diagnostic:after {
     content: "sm";
   }
+
+  footer .copyright .license {
+        text-align: right;
+  }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
   #diagnostic:after {
     content: "md";
   }
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
   #diagnostic:after {
     content: "lg";
   }
+
 }

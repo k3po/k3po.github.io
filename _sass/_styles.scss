@@ -1,10 +1,10 @@
-$base-color: #72ae16;
+$base-color: #3dae16;
 
 $text-color: #555555;
 
-$link-color: darken($base-color, 10%);
+$link-color: darken($base-color, 5%);
 
-$page-background-color: #191919;
+$page-background-color: #192019;
 
 $content-background-color: #fafafa;
 
@@ -93,7 +93,7 @@ h4 {
 
 a, a:hover, a:focus {
   color: $link-color;
-  border-bottom: 1px dotted $link-color;
+  border-bottom: 1px dashed $link-color;
   text-decoration: none;
 }
 

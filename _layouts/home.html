@@ -1,0 +1,58 @@
+---
+layout: base
+---
+
+<header>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h1>K3PO Protocol Droid</h1>
+        <h2>Testing the "I" in IoT!</h2>
+        <h3>Automate your binary protocol testing with human readable scripts</h3>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container text-center home-row">
+  <div class="row">
+
+    {% assign first = true %}
+    {% for page in site.pages %}
+    {% if page.categories contains 'k3po-repo' %}
+
+    {% capture repoUrl %}http://github.com/{{page.github-org}}/{{page.github-repo-name}}{% endcapture %}
+
+    {% if first == false %}
+    <hr>
+    {% endif %}
+
+    <div class="row home-repo-row">
+
+      <div class="col-sm-8 col-sm-offset-2">
+
+        <h2>{{ page.title }}</h2>
+
+        <p>
+          <a href="{{ repoUrl }}" target="_blank">GitHub Repo</a>
+          {% if page.live-demo-url %} <span class="separator">|</span> <a href="{{page.live-demo-url}}">Demo</a> {% endif %}
+          {% if page.tutorial-url %} <span class="separator">|</span> <a href="{{page.tutorial-url}}">Tutorial</a> {% endif %}
+          {% if page.doc-url %} <span class="separator">|</span> <a href="{{page.doc-url}}">Documentation</a> {% endif %}
+          {% if page.api-url %} <span class="separator">|</span> <a href="{{page.api-url}}">API Documentation</a> {% endif %}
+          {% if page.download-url %} <span class="separator">|</span> <a href="{{page.download-url}}">Download</a> {% endif %}
+        </p>
+
+        {{ page.content | markdownify }}
+
+      </div>
+
+    </div>
+
+    {% assign first = false %}
+
+    {% endif %}
+    {% endfor %}
+
+  </div>
+</div>
+

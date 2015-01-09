@@ -101,6 +101,10 @@ a:hover, a:focus {
   border-bottom: 1px solid $link-color;
 }
 
+a.image-link {
+  border-bottom: 0;
+}
+
 pre {
   border-radius: 2px;
 }
@@ -153,7 +157,7 @@ footer {
   }
 
   div.copyright {
-    margin-top: $footer-padding;
+    margin-top: 5px;
     border-top: solid 1px $footer-text-color;
   }
 }

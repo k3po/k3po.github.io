@@ -8,7 +8,8 @@ $page-background-color: #192019;
 
 $content-background-color: #fafafa;
 
-$heading-font-family: 'Exo 2', sans-serif;
+$font-family: 'Exo 2', sans-serif;
+
 $heading-color: $base-color;
 
 $footer-padding: 30px;
@@ -66,15 +67,17 @@ body {
   background-color: $content-background-color;
   padding-top: 50px; // So content doesn't go under the fixed navbar
   color: $text-color;
+  font-family: $font-family;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4 {
-  font-family: $heading-font-family;
   font-weight: 400;
   color: $heading-color;
 }
 
 h1 {
+  font-family: 'Audiowide', cursive;
   font-size: 28px;
 }
 
@@ -117,6 +120,10 @@ pre {
 .navbar-default .navbar-brand {
   color: $navbar-color;
   border-bottom: 0;
+}
+
+.navbar-brand {
+  font-family: 'Audiowide', cursive;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -199,6 +206,14 @@ header {
 
 .home-row {
   margin-top: 20px;
+}
+
+.home-repo-row {
+
+  h2 {
+    font-family: 'Audiowide', cursive;
+  }
+
 }
 
 hr {

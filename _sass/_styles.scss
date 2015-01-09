@@ -64,7 +64,7 @@ html {
 
 body {
   background-color: $content-background-color;
-  padding-top: 52px; // So content doesn't go under the fixed navbar
+  padding-top: 50px; // So content doesn't go under the fixed navbar
   color: $text-color;
 }
 
@@ -106,9 +106,8 @@ pre {
 }
 
 .navbar {
-  border-bottom-width: 2px;
-  border-bottom-color: #71B238;
   background-color: #eef2e9;
+  border: 0;
 }
 
 .navbar-default .navbar-brand {

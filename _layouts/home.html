@@ -7,7 +7,7 @@ layout: base
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <h1>K3PO Protocol Droid</h1>
-        <h2>Testing the "I" in IoT!</h2>
+        <h2>Testing the "I" in IoT</h2>
         <h3>Automate your binary protocol testing with human readable scripts</h3>
       </div>
     </div>
@@ -15,17 +15,19 @@ layout: base
 </header>
 
 <div class="container text-center home-row">
+
+  <div>
+  <p>These are some of the key starting GitHub repositories for K3PO.</p>
+  </div>
+
   <div class="row">
 
-    {% assign first = true %}
     {% for page in site.pages %}
     {% if page.categories contains 'k3po-repo' %}
 
     {% capture repoUrl %}http://github.com/{{page.github-org}}/{{page.github-repo-name}}{% endcapture %}
 
-    {% if first == false %}
     <hr>
-    {% endif %}
 
     <div class="row home-repo-row">
 

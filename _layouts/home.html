@@ -9,6 +9,7 @@ layout: base
         <h1>K3PO Protocol Droid</h1>
         <h2>Testing the "I" in IoT</h2>
         <h3>Automate your binary protocol testing with human readable scripts</h3>
+        <p>Licensed under Apache 2.0</p>
       </div>
     </div>
   </div>
@@ -17,7 +18,7 @@ layout: base
 <div class="container text-center home-row">
 
   <div>
-  <p>These are some of the key starting GitHub repositories for K3PO.</p>
+    <p>These are some of the key starting GitHub repositories for K3PO.</p>
   </div>
 
   <div class="row">
@@ -42,6 +43,7 @@ layout: base
           {% if page.doc-url %} <span class="separator">|</span> <a href="{{page.doc-url}}">Documentation</a> {% endif %}
           {% if page.api-url %} <span class="separator">|</span> <a href="{{page.api-url}}">API Documentation</a> {% endif %}
           {% if page.download-url %} <span class="separator">|</span> <a href="{{page.download-url}}">Download</a> {% endif %}
+          {% if page.gitter-chat-url %} <span class="separator">|</span> <a href="{{ page.gitter-chat-url }}" target="_blank"><img src="https://badges.gitter.im/JoinChat.svg" alt="Gitter"></a> {% endif %}
         </p>
 
         {{ page.content | markdownify }}

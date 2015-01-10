@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/k3po/k3po.github.io.svg?branch=develop)](https://travis-ci.org/k3po/k3po.github.io)
 Install Jekyll
 ==============
 

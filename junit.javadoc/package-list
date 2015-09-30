@@ -1,3 +1,2 @@
 org.kaazing.k3po.junit.annotation
 org.kaazing.k3po.junit.rules
-org.kaazing.k3po.junit.rules.internal

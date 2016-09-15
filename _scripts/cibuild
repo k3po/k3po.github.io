@@ -166,4 +166,4 @@ then
 fi
 
 # Check the site with html-proof
-bundle exec htmlproof ./_site
+bundle exec htmlproofer ./_site
